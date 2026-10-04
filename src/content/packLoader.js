@@ -21,32 +21,38 @@ function validateSurveyPack(pack, file) {
   return errors.map((e) => `${file}: ${e}`);
 }
 
+// A Fast Money pack is a pool of questions: a flat "questions" list, and/or
+// the Quiz Clash "sets" format, whose sets are simply merged into the pool.
+function fastMoneyQuestions(pack) {
+  const fromSets = Array.isArray(pack.sets) ? pack.sets.flatMap((s) => s.questions ?? []) : [];
+  return [...(Array.isArray(pack.questions) ? pack.questions : []), ...fromSets];
+}
+
 function validateFastMoneyPack(pack, file) {
   const errors = [];
-  if (!Array.isArray(pack.sets) || pack.sets.length === 0) errors.push('missing "sets"');
-  for (const set of pack.sets ?? []) {
-    if (!Array.isArray(set.questions) || set.questions.length !== FAST_MONEY.QUESTION_COUNT)
-      errors.push(`a set must have exactly ${FAST_MONEY.QUESTION_COUNT} questions`);
-    for (const q of set.questions ?? []) {
-      if (!q.prompt || !Array.isArray(q.answers) || q.answers.length === 0)
-        errors.push('a question is missing "prompt" or "answers"');
-    }
+  const questions = fastMoneyQuestions(pack);
+  if (!questions.length) errors.push('missing "questions"');
+  for (const q of questions) {
+    if (!q.prompt || !Array.isArray(q.answers) || q.answers.length === 0)
+      errors.push('a question is missing "prompt" or "answers"');
   }
   return errors.map((e) => `${file}: ${e}`);
 }
 
-// Loads everything under packs/. Returns { surveyPacks, fastMoney, warnings }.
+// Loads everything under packs/. Returns { surveyPacks, fastMoney, warnings },
+// where fastMoney is the pooled list of every Fast Money question.
 export async function loadPacks(dir = config.paths.packs) {
   const warnings = [];
   const surveyPacks = [];
-  const fastMoneySets = [];
+  const fastMoneyPool = [];
+  const seenPrompts = new Set();
 
   let files = [];
   try {
     files = (await readdir(dir)).filter((f) => f.endsWith('.json'));
   } catch (err) {
     warnings.push(`Could not read packs directory: ${err.message}`);
-    return { surveyPacks, fastMoney: fastMoneySets, warnings };
+    return { surveyPacks, fastMoney: fastMoneyPool, warnings };
   }
 
   for (const file of files.sort()) {
@@ -64,7 +70,12 @@ export async function loadPacks(dir = config.paths.packs) {
         warnings.push(...errs);
         continue;
       }
-      for (const set of pack.sets) fastMoneySets.push(set);
+      for (const q of fastMoneyQuestions(pack)) {
+        const key = q.prompt.trim().toLowerCase();
+        if (seenPrompts.has(key)) continue; // the same question in two packs counts once
+        seenPrompts.add(key);
+        fastMoneyPool.push({ prompt: q.prompt, topic: q.topic || '', answers: q.answers });
+      }
     } else {
       const errs = validateSurveyPack(pack, file);
       if (errs.length) {
@@ -87,5 +98,7 @@ export async function loadPacks(dir = config.paths.packs) {
     }
   }
 
-  return { surveyPacks, fastMoney: fastMoneySets, warnings };
+  if (fastMoneyPool.length && fastMoneyPool.length < FAST_MONEY.QUESTION_COUNT)
+    warnings.push(`Fast Money needs at least ${FAST_MONEY.QUESTION_COUNT} questions; found ${fastMoneyPool.length}`);
+  return { surveyPacks, fastMoney: fastMoneyPool, warnings };
 }

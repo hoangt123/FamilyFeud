@@ -23,11 +23,13 @@ local Wi-Fi.
   round 3 goes to a sudden-death face-off.
 - **Fast Money finale**, taken from [Quiz Clash](https://github.com/hoangt123/Jeopardy).
   The leading team sends two finalists who get 25 and 30 seconds, with a buzzer at zero.
-  Finalist 2 can't repeat finalist 1's answers, and 200 points wins.
+  Finalist 2 can't repeat finalist 1's answers, and 200 points wins. Each game draws
+  5 fresh questions from a pool of 50, each on a different topic, so no two finales
+  look alike.
 - **Host safety nets:** ↶ Undo, click a tile to award an answer the text didn't match,
   face-off override buttons, double-click a score to fix it, and ⇄ to swap a question
   before anything is revealed.
-- **40 surveys + 4 Fast Money sets** included, in simple JSON packs you can add to.
+- **40 surveys + 50 Fast Money questions** included, in simple JSON packs you can add to.
 
 ---
 
@@ -115,8 +117,9 @@ appears as a pack you can toggle in the lobby. See [`packs/README.md`](packs/REA
 }
 ```
 
-Played surveys are remembered in `data/used-surveys.json`, so the next game draws
-fresh ones until the pool runs out. Delete the file to start over.
+Played surveys and Fast Money questions are remembered in `data/used-surveys.json` and
+`data/used-fast-money.json`, so the next game draws fresh ones until the pool runs
+out. Delete the files to start over.
 
 ---
 

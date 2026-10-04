@@ -31,8 +31,11 @@ async function main() {
   }
 
   const engine = new GameEngine(
-    { surveyPacks, fastMoneySets: fastMoney },
-    { usedStore: createUsedSurveyStore(join(config.paths.data, 'used-surveys.json')) },
+    { surveyPacks, fastMoneyQuestions: fastMoney },
+    {
+      usedStore: createUsedSurveyStore(join(config.paths.data, 'used-surveys.json')),
+      usedFastMoneyStore: createUsedSurveyStore(join(config.paths.data, 'used-fast-money.json')),
+    },
   );
   let scheme = 'http'; // finalized below, before the server starts listening
   const handler = createRequestHandler({ getScheme: () => scheme });
@@ -87,7 +90,7 @@ function printBanner(scheme, surveyPacks, fastMoney) {
 
   console.log(
     `${C.dim}  Loaded ${surveyPacks.length} survey pack(s) (${surveys} surveys), ` +
-      `${fastMoney.length} Fast Money set(s). Press Ctrl+C to stop.${C.reset}\n`,
+      `${fastMoney.length} Fast Money questions. Press Ctrl+C to stop.${C.reset}\n`,
   );
 }
 
