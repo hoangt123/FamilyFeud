@@ -1,0 +1,1193 @@
+{
+  "id": "everyday-life",
+  "title": "Everyday Life",
+  "surveys": [
+    {
+      "prompt": "Name something people do as soon as they wake up.",
+      "answers": [
+        {
+          "text": "Check their phone",
+          "points": 31,
+          "accept": [
+            "phone",
+            "look at phone",
+            "check phone",
+            "scroll"
+          ]
+        },
+        {
+          "text": "Go to the bathroom",
+          "points": 22,
+          "accept": [
+            "bathroom",
+            "pee",
+            "toilet"
+          ]
+        },
+        {
+          "text": "Brush teeth",
+          "points": 14,
+          "accept": [
+            "brush",
+            "teeth"
+          ]
+        },
+        {
+          "text": "Make coffee",
+          "points": 12,
+          "accept": [
+            "coffee",
+            "drink coffee"
+          ]
+        },
+        {
+          "text": "Stretch",
+          "points": 8,
+          "accept": [
+            "stretching",
+            "yawn"
+          ]
+        },
+        {
+          "text": "Shower",
+          "points": 6,
+          "accept": [
+            "take a shower",
+            "showering"
+          ]
+        },
+        {
+          "text": "Hit snooze",
+          "points": 4,
+          "accept": [
+            "snooze",
+            "go back to sleep"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you might lose in your couch cushions.",
+      "answers": [
+        {
+          "text": "Remote control",
+          "points": 34,
+          "accept": [
+            "remote",
+            "tv remote",
+            "clicker"
+          ]
+        },
+        {
+          "text": "Coins",
+          "points": 24,
+          "accept": [
+            "change",
+            "money",
+            "loose change"
+          ]
+        },
+        {
+          "text": "Phone",
+          "points": 13,
+          "accept": [
+            "cell phone",
+            "cellphone"
+          ]
+        },
+        {
+          "text": "Keys",
+          "points": 10,
+          "accept": [
+            "car keys",
+            "key"
+          ]
+        },
+        {
+          "text": "Food crumbs",
+          "points": 8,
+          "accept": [
+            "crumbs",
+            "food",
+            "snacks",
+            "popcorn"
+          ]
+        },
+        {
+          "text": "Pen",
+          "points": 5,
+          "accept": [
+            "pens",
+            "pencil"
+          ]
+        },
+        {
+          "text": "Earrings",
+          "points": 3,
+          "accept": [
+            "jewelry",
+            "earring"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a reason you might be late for work.",
+      "answers": [
+        {
+          "text": "Traffic",
+          "points": 38,
+          "accept": [
+            "car traffic",
+            "stuck in traffic"
+          ]
+        },
+        {
+          "text": "Overslept",
+          "points": 27,
+          "accept": [
+            "slept in",
+            "alarm",
+            "oversleep",
+            "late alarm"
+          ]
+        },
+        {
+          "text": "Car trouble",
+          "points": 11,
+          "accept": [
+            "flat tire",
+            "car broke down",
+            "car wouldn't start"
+          ]
+        },
+        {
+          "text": "Kids",
+          "points": 9,
+          "accept": [
+            "children",
+            "school drop off"
+          ]
+        },
+        {
+          "text": "Weather",
+          "points": 6,
+          "accept": [
+            "snow",
+            "rain",
+            "storm"
+          ]
+        },
+        {
+          "text": "Bad hair day",
+          "points": 4,
+          "accept": [
+            "hair",
+            "getting ready"
+          ]
+        },
+        {
+          "text": "Missed the bus",
+          "points": 3,
+          "accept": [
+            "bus",
+            "train",
+            "missed train"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people are afraid of.",
+      "answers": [
+        {
+          "text": "Spiders",
+          "points": 32,
+          "accept": [
+            "spider"
+          ]
+        },
+        {
+          "text": "Heights",
+          "points": 21,
+          "accept": [
+            "height",
+            "falling"
+          ]
+        },
+        {
+          "text": "Snakes",
+          "points": 16,
+          "accept": [
+            "snake"
+          ]
+        },
+        {
+          "text": "The dark",
+          "points": 11,
+          "accept": [
+            "darkness",
+            "dark"
+          ]
+        },
+        {
+          "text": "Clowns",
+          "points": 8,
+          "accept": [
+            "clown"
+          ]
+        },
+        {
+          "text": "Dying",
+          "points": 6,
+          "accept": [
+            "death"
+          ]
+        },
+        {
+          "text": "Public speaking",
+          "points": 4,
+          "accept": [
+            "speaking",
+            "speeches"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a chore that most people hate doing.",
+      "answers": [
+        {
+          "text": "Dishes",
+          "points": 33,
+          "accept": [
+            "washing dishes",
+            "doing dishes"
+          ]
+        },
+        {
+          "text": "Laundry",
+          "points": 24,
+          "accept": [
+            "folding laundry",
+            "clothes",
+            "washing clothes"
+          ]
+        },
+        {
+          "text": "Cleaning the bathroom",
+          "points": 15,
+          "accept": [
+            "bathroom",
+            "toilet",
+            "scrubbing toilet"
+          ]
+        },
+        {
+          "text": "Vacuuming",
+          "points": 10,
+          "accept": [
+            "vacuum"
+          ]
+        },
+        {
+          "text": "Taking out trash",
+          "points": 8,
+          "accept": [
+            "trash",
+            "garbage"
+          ]
+        },
+        {
+          "text": "Mopping",
+          "points": 6,
+          "accept": [
+            "mop",
+            "floors"
+          ]
+        },
+        {
+          "text": "Ironing",
+          "points": 4,
+          "accept": [
+            "iron"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people bring on a road trip.",
+      "answers": [
+        {
+          "text": "Snacks",
+          "points": 35,
+          "accept": [
+            "food",
+            "chips"
+          ]
+        },
+        {
+          "text": "Music",
+          "points": 20,
+          "accept": [
+            "playlist",
+            "radio",
+            "cds"
+          ]
+        },
+        {
+          "text": "Pillow",
+          "points": 12,
+          "accept": [
+            "pillows",
+            "blanket"
+          ]
+        },
+        {
+          "text": "Map/GPS",
+          "points": 11,
+          "accept": [
+            "map",
+            "gps",
+            "phone charger",
+            "charger"
+          ]
+        },
+        {
+          "text": "Drinks",
+          "points": 9,
+          "accept": [
+            "water",
+            "soda",
+            "coffee"
+          ]
+        },
+        {
+          "text": "Games",
+          "points": 7,
+          "accept": [
+            "car games",
+            "cards"
+          ]
+        },
+        {
+          "text": "Sunglasses",
+          "points": 6,
+          "accept": [
+            "shades"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something associated with Halloween.",
+      "answers": [
+        {
+          "text": "Candy",
+          "points": 36,
+          "accept": [
+            "candies",
+            "treats",
+            "chocolate"
+          ]
+        },
+        {
+          "text": "Costumes",
+          "points": 24,
+          "accept": [
+            "costume",
+            "dressing up"
+          ]
+        },
+        {
+          "text": "Pumpkins",
+          "points": 16,
+          "accept": [
+            "pumpkin",
+            "jack o lantern",
+            "jack-o-lantern"
+          ]
+        },
+        {
+          "text": "Ghosts",
+          "points": 9,
+          "accept": [
+            "ghost"
+          ]
+        },
+        {
+          "text": "Witches",
+          "points": 7,
+          "accept": [
+            "witch"
+          ]
+        },
+        {
+          "text": "Trick or treating",
+          "points": 5,
+          "accept": [
+            "trick or treat"
+          ]
+        },
+        {
+          "text": "Haunted house",
+          "points": 3,
+          "accept": [
+            "haunted houses"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a place where people have to be quiet.",
+      "answers": [
+        {
+          "text": "Library",
+          "points": 44,
+          "accept": [
+            "libraries"
+          ]
+        },
+        {
+          "text": "Church",
+          "points": 19,
+          "accept": [
+            "temple",
+            "mosque",
+            "place of worship"
+          ]
+        },
+        {
+          "text": "Hospital",
+          "points": 12,
+          "accept": [
+            "hospitals"
+          ]
+        },
+        {
+          "text": "Movie theater",
+          "points": 10,
+          "accept": [
+            "movies",
+            "cinema"
+          ]
+        },
+        {
+          "text": "Funeral",
+          "points": 8,
+          "accept": [
+            "funeral home",
+            "wake"
+          ]
+        },
+        {
+          "text": "Classroom",
+          "points": 4,
+          "accept": [
+            "school",
+            "test",
+            "exam"
+          ]
+        },
+        {
+          "text": "Museum",
+          "points": 3,
+          "accept": [
+            "art gallery"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something that has wheels.",
+      "answers": [
+        {
+          "text": "Car",
+          "points": 39,
+          "accept": [
+            "cars",
+            "automobile"
+          ]
+        },
+        {
+          "text": "Bicycle",
+          "points": 22,
+          "accept": [
+            "bike",
+            "bicycles"
+          ]
+        },
+        {
+          "text": "Skateboard",
+          "points": 12,
+          "accept": [
+            "skateboards"
+          ]
+        },
+        {
+          "text": "Bus",
+          "points": 9,
+          "accept": [
+            "school bus"
+          ]
+        },
+        {
+          "text": "Shopping cart",
+          "points": 8,
+          "accept": [
+            "cart",
+            "grocery cart"
+          ]
+        },
+        {
+          "text": "Wheelchair",
+          "points": 6,
+          "accept": [
+            "wheel chair"
+          ]
+        },
+        {
+          "text": "Suitcase",
+          "points": 4,
+          "accept": [
+            "luggage"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people do at a wedding reception.",
+      "answers": [
+        {
+          "text": "Dance",
+          "points": 41,
+          "accept": [
+            "dancing"
+          ]
+        },
+        {
+          "text": "Eat",
+          "points": 19,
+          "accept": [
+            "dinner",
+            "food",
+            "eating"
+          ]
+        },
+        {
+          "text": "Drink",
+          "points": 14,
+          "accept": [
+            "drinking",
+            "toast",
+            "champagne"
+          ]
+        },
+        {
+          "text": "Cut the cake",
+          "points": 10,
+          "accept": [
+            "cake",
+            "eat cake"
+          ]
+        },
+        {
+          "text": "Give speeches",
+          "points": 8,
+          "accept": [
+            "speech",
+            "toasts"
+          ]
+        },
+        {
+          "text": "Throw the bouquet",
+          "points": 5,
+          "accept": [
+            "bouquet",
+            "bouquet toss"
+          ]
+        },
+        {
+          "text": "Take photos",
+          "points": 3,
+          "accept": [
+            "pictures",
+            "photos"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a job where you wear a uniform.",
+      "answers": [
+        {
+          "text": "Police officer",
+          "points": 30,
+          "accept": [
+            "police",
+            "cop",
+            "officer"
+          ]
+        },
+        {
+          "text": "Nurse",
+          "points": 18,
+          "accept": [
+            "doctor",
+            "nursing"
+          ]
+        },
+        {
+          "text": "Firefighter",
+          "points": 15,
+          "accept": [
+            "fireman",
+            "firemen"
+          ]
+        },
+        {
+          "text": "Soldier",
+          "points": 12,
+          "accept": [
+            "military",
+            "army",
+            "navy"
+          ]
+        },
+        {
+          "text": "Mail carrier",
+          "points": 9,
+          "accept": [
+            "mailman",
+            "postal worker"
+          ]
+        },
+        {
+          "text": "Chef",
+          "points": 8,
+          "accept": [
+            "cook"
+          ]
+        },
+        {
+          "text": "Pilot",
+          "points": 5,
+          "accept": [
+            "flight attendant"
+          ]
+        },
+        {
+          "text": "Fast food worker",
+          "points": 3,
+          "accept": [
+            "waiter",
+            "waitress"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you need to go camping.",
+      "answers": [
+        {
+          "text": "Tent",
+          "points": 44,
+          "accept": [
+            "tents"
+          ]
+        },
+        {
+          "text": "Sleeping bag",
+          "points": 20,
+          "accept": [
+            "sleeping bags"
+          ]
+        },
+        {
+          "text": "Flashlight",
+          "points": 12,
+          "accept": [
+            "lantern",
+            "torch"
+          ]
+        },
+        {
+          "text": "Food",
+          "points": 9,
+          "accept": [
+            "marshmallows",
+            "s'mores"
+          ]
+        },
+        {
+          "text": "Firewood",
+          "points": 7,
+          "accept": [
+            "fire",
+            "matches",
+            "lighter"
+          ]
+        },
+        {
+          "text": "Bug spray",
+          "points": 5,
+          "accept": [
+            "insect repellent",
+            "repellent"
+          ]
+        },
+        {
+          "text": "Water",
+          "points": 3,
+          "accept": [
+            "drinking water"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a famous superhero.",
+      "answers": [
+        {
+          "text": "Superman",
+          "points": 34,
+          "accept": [
+            "super man"
+          ]
+        },
+        {
+          "text": "Batman",
+          "points": 27,
+          "accept": [
+            "bat man"
+          ]
+        },
+        {
+          "text": "Spider-Man",
+          "points": 18,
+          "accept": [
+            "spiderman",
+            "spider man"
+          ]
+        },
+        {
+          "text": "Wonder Woman",
+          "points": 9,
+          "accept": [
+            "wonderwoman"
+          ]
+        },
+        {
+          "text": "Iron Man",
+          "points": 6,
+          "accept": [
+            "ironman"
+          ]
+        },
+        {
+          "text": "Captain America",
+          "points": 4,
+          "accept": [
+            "cap"
+          ]
+        },
+        {
+          "text": "Hulk",
+          "points": 2,
+          "accept": [
+            "incredible hulk"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people collect.",
+      "answers": [
+        {
+          "text": "Stamps",
+          "points": 28,
+          "accept": [
+            "stamp"
+          ]
+        },
+        {
+          "text": "Coins",
+          "points": 24,
+          "accept": [
+            "coin"
+          ]
+        },
+        {
+          "text": "Baseball cards",
+          "points": 15,
+          "accept": [
+            "cards",
+            "trading cards",
+            "sports cards"
+          ]
+        },
+        {
+          "text": "Dolls",
+          "points": 10,
+          "accept": [
+            "barbies",
+            "action figures"
+          ]
+        },
+        {
+          "text": "Comic books",
+          "points": 9,
+          "accept": [
+            "comics"
+          ]
+        },
+        {
+          "text": "Shoes",
+          "points": 8,
+          "accept": [
+            "sneakers"
+          ]
+        },
+        {
+          "text": "Records",
+          "points": 6,
+          "accept": [
+            "vinyl",
+            "albums"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a reason people go to the hospital.",
+      "answers": [
+        {
+          "text": "Having a baby",
+          "points": 29,
+          "accept": [
+            "baby",
+            "giving birth",
+            "birth",
+            "pregnant"
+          ]
+        },
+        {
+          "text": "Broken bone",
+          "points": 23,
+          "accept": [
+            "broke a bone",
+            "fracture",
+            "broken arm",
+            "broken leg"
+          ]
+        },
+        {
+          "text": "Surgery",
+          "points": 16,
+          "accept": [
+            "operation"
+          ]
+        },
+        {
+          "text": "Car accident",
+          "points": 12,
+          "accept": [
+            "accident",
+            "injury"
+          ]
+        },
+        {
+          "text": "Heart attack",
+          "points": 9,
+          "accept": [
+            "heart"
+          ]
+        },
+        {
+          "text": "Sick",
+          "points": 7,
+          "accept": [
+            "illness",
+            "flu",
+            "fever"
+          ]
+        },
+        {
+          "text": "Checkup",
+          "points": 4,
+          "accept": [
+            "check up",
+            "visit someone",
+            "visiting"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you might find in a junk drawer.",
+      "answers": [
+        {
+          "text": "Batteries",
+          "points": 26,
+          "accept": [
+            "battery"
+          ]
+        },
+        {
+          "text": "Rubber bands",
+          "points": 19,
+          "accept": [
+            "rubber band"
+          ]
+        },
+        {
+          "text": "Pens",
+          "points": 17,
+          "accept": [
+            "pen",
+            "pencils",
+            "pencil"
+          ]
+        },
+        {
+          "text": "Takeout menus",
+          "points": 11,
+          "accept": [
+            "menus",
+            "menu"
+          ]
+        },
+        {
+          "text": "Tape",
+          "points": 10,
+          "accept": [
+            "scotch tape",
+            "duct tape"
+          ]
+        },
+        {
+          "text": "Keys",
+          "points": 9,
+          "accept": [
+            "old keys",
+            "key"
+          ]
+        },
+        {
+          "text": "Scissors",
+          "points": 8,
+          "accept": [
+            "scissor"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people do on their birthday.",
+      "answers": [
+        {
+          "text": "Eat cake",
+          "points": 37,
+          "accept": [
+            "cake",
+            "blow out candles",
+            "candles"
+          ]
+        },
+        {
+          "text": "Party",
+          "points": 25,
+          "accept": [
+            "have a party",
+            "celebrate"
+          ]
+        },
+        {
+          "text": "Open presents",
+          "points": 16,
+          "accept": [
+            "gifts",
+            "presents"
+          ]
+        },
+        {
+          "text": "Go out to eat",
+          "points": 11,
+          "accept": [
+            "dinner",
+            "restaurant"
+          ]
+        },
+        {
+          "text": "Make a wish",
+          "points": 6,
+          "accept": [
+            "wish"
+          ]
+        },
+        {
+          "text": "Drink",
+          "points": 5,
+          "accept": [
+            "get drunk",
+            "drinks"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a holiday when families get together.",
+      "answers": [
+        {
+          "text": "Thanksgiving",
+          "points": 42,
+          "accept": [
+            "thanks giving"
+          ]
+        },
+        {
+          "text": "Christmas",
+          "points": 35,
+          "accept": [
+            "xmas",
+            "christmas eve"
+          ]
+        },
+        {
+          "text": "Easter",
+          "points": 10,
+          "accept": [
+            "easter sunday"
+          ]
+        },
+        {
+          "text": "Fourth of July",
+          "points": 6,
+          "accept": [
+            "4th of july",
+            "independence day",
+            "july 4th"
+          ]
+        },
+        {
+          "text": "New Year's",
+          "points": 4,
+          "accept": [
+            "new years",
+            "new year's eve"
+          ]
+        },
+        {
+          "text": "Hanukkah",
+          "points": 3,
+          "accept": [
+            "chanukah"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a game people play at a party.",
+      "answers": [
+        {
+          "text": "Charades",
+          "points": 28,
+          "accept": [
+            "charade"
+          ]
+        },
+        {
+          "text": "Twister",
+          "points": 18
+        },
+        {
+          "text": "Spin the bottle",
+          "points": 15
+        },
+        {
+          "text": "Musical chairs",
+          "points": 12
+        },
+        {
+          "text": "Pictionary",
+          "points": 10
+        },
+        {
+          "text": "Cards",
+          "points": 9,
+          "accept": [
+            "poker",
+            "card games"
+          ]
+        },
+        {
+          "text": "Truth or dare",
+          "points": 8
+        }
+      ]
+    },
+    {
+      "prompt": "Name a sound that would wake you up at night.",
+      "answers": [
+        {
+          "text": "Alarm",
+          "points": 24,
+          "accept": [
+            "alarm clock",
+            "smoke alarm",
+            "fire alarm"
+          ]
+        },
+        {
+          "text": "Baby crying",
+          "points": 22,
+          "accept": [
+            "crying",
+            "baby",
+            "child crying"
+          ]
+        },
+        {
+          "text": "Dog barking",
+          "points": 18,
+          "accept": [
+            "dog",
+            "barking"
+          ]
+        },
+        {
+          "text": "Thunder",
+          "points": 14,
+          "accept": [
+            "storm",
+            "lightning"
+          ]
+        },
+        {
+          "text": "Snoring",
+          "points": 10,
+          "accept": [
+            "spouse snoring"
+          ]
+        },
+        {
+          "text": "Phone ringing",
+          "points": 7,
+          "accept": [
+            "phone",
+            "text",
+            "ringing"
+          ]
+        },
+        {
+          "text": "Siren",
+          "points": 5,
+          "accept": [
+            "sirens",
+            "ambulance"
+          ]
+        }
+      ]
+    }
+  ]
+}

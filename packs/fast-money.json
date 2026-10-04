@@ -1,0 +1,1014 @@
+{
+  "id": "fast-money",
+  "title": "Fast Money Surveys",
+  "kind": "fast-money",
+  "sets": [
+    {
+      "questions": [
+        {
+          "prompt": "Name something people do to relax.",
+          "answers": [
+            {
+              "text": "Sleep / nap",
+              "points": 30,
+              "accept": [
+                "sleep",
+                "nap",
+                "sleeping",
+                "napping"
+              ]
+            },
+            {
+              "text": "Watch TV",
+              "points": 25,
+              "accept": [
+                "tv",
+                "television",
+                "watch tv",
+                "watching tv",
+                "netflix"
+              ]
+            },
+            {
+              "text": "Read",
+              "points": 15,
+              "accept": [
+                "read",
+                "reading",
+                "book"
+              ]
+            },
+            {
+              "text": "Take a bath / shower",
+              "points": 12,
+              "accept": [
+                "bath",
+                "shower",
+                "soak"
+              ]
+            },
+            {
+              "text": "Listen to music",
+              "points": 10,
+              "accept": [
+                "music",
+                "listen to music"
+              ]
+            },
+            {
+              "text": "Exercise",
+              "points": 8,
+              "accept": [
+                "exercise",
+                "workout",
+                "yoga"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name a popular pizza topping.",
+          "answers": [
+            {
+              "text": "Pepperoni",
+              "points": 40,
+              "accept": [
+                "pepperoni"
+              ]
+            },
+            {
+              "text": "Cheese",
+              "points": 20,
+              "accept": [
+                "cheese",
+                "extra cheese"
+              ]
+            },
+            {
+              "text": "Sausage",
+              "points": 12,
+              "accept": [
+                "sausage"
+              ]
+            },
+            {
+              "text": "Mushroom",
+              "points": 10,
+              "accept": [
+                "mushroom",
+                "mushrooms"
+              ]
+            },
+            {
+              "text": "Onion",
+              "points": 10,
+              "accept": [
+                "onion",
+                "onions"
+              ]
+            },
+            {
+              "text": "Pineapple",
+              "points": 8,
+              "accept": [
+                "pineapple"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name a fruit that is yellow.",
+          "answers": [
+            {
+              "text": "Banana",
+              "points": 45,
+              "accept": [
+                "banana",
+                "bananas"
+              ]
+            },
+            {
+              "text": "Lemon",
+              "points": 25,
+              "accept": [
+                "lemon",
+                "lemons"
+              ]
+            },
+            {
+              "text": "Pineapple",
+              "points": 13,
+              "accept": [
+                "pineapple"
+              ]
+            },
+            {
+              "text": "Mango",
+              "points": 9,
+              "accept": [
+                "mango"
+              ]
+            },
+            {
+              "text": "Pear",
+              "points": 8,
+              "accept": [
+                "pear"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name something you'd find in a kitchen.",
+          "answers": [
+            {
+              "text": "Refrigerator",
+              "points": 25,
+              "accept": [
+                "fridge",
+                "refrigerator",
+                "freezer"
+              ]
+            },
+            {
+              "text": "Stove / oven",
+              "points": 22,
+              "accept": [
+                "stove",
+                "oven",
+                "range"
+              ]
+            },
+            {
+              "text": "Sink",
+              "points": 15,
+              "accept": [
+                "sink"
+              ]
+            },
+            {
+              "text": "Microwave",
+              "points": 12,
+              "accept": [
+                "microwave"
+              ]
+            },
+            {
+              "text": "Table",
+              "points": 14,
+              "accept": [
+                "table",
+                "kitchen table"
+              ]
+            },
+            {
+              "text": "Knife",
+              "points": 12,
+              "accept": [
+                "knife",
+                "knives"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name an animal people keep as a pet.",
+          "answers": [
+            {
+              "text": "Dog",
+              "points": 45,
+              "accept": [
+                "dog",
+                "dogs",
+                "puppy"
+              ]
+            },
+            {
+              "text": "Cat",
+              "points": 30,
+              "accept": [
+                "cat",
+                "cats",
+                "kitten"
+              ]
+            },
+            {
+              "text": "Fish",
+              "points": 10,
+              "accept": [
+                "fish",
+                "goldfish"
+              ]
+            },
+            {
+              "text": "Bird",
+              "points": 8,
+              "accept": [
+                "bird",
+                "birds",
+                "parrot"
+              ]
+            },
+            {
+              "text": "Hamster",
+              "points": 7,
+              "accept": [
+                "hamster",
+                "guinea pig"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questions": [
+        {
+          "prompt": "Name a month when lots of people get married.",
+          "answers": [
+            {
+              "text": "June",
+              "points": 30,
+              "accept": [
+                "june"
+              ]
+            },
+            {
+              "text": "May",
+              "points": 18,
+              "accept": [
+                "may"
+              ]
+            },
+            {
+              "text": "September",
+              "points": 15,
+              "accept": [
+                "september",
+                "sept"
+              ]
+            },
+            {
+              "text": "August",
+              "points": 12,
+              "accept": [
+                "august"
+              ]
+            },
+            {
+              "text": "October",
+              "points": 13,
+              "accept": [
+                "october",
+                "oct"
+              ]
+            },
+            {
+              "text": "July",
+              "points": 12,
+              "accept": [
+                "july"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name something you take to the beach.",
+          "answers": [
+            {
+              "text": "Towel",
+              "points": 30,
+              "accept": [
+                "towel",
+                "towels"
+              ]
+            },
+            {
+              "text": "Sunscreen",
+              "points": 25,
+              "accept": [
+                "sunscreen",
+                "sunblock",
+                "lotion"
+              ]
+            },
+            {
+              "text": "Umbrella",
+              "points": 12,
+              "accept": [
+                "umbrella",
+                "beach umbrella"
+              ]
+            },
+            {
+              "text": "Cooler",
+              "points": 11,
+              "accept": [
+                "cooler",
+                "drinks",
+                "snacks"
+              ]
+            },
+            {
+              "text": "Chair",
+              "points": 10,
+              "accept": [
+                "chair",
+                "beach chair"
+              ]
+            },
+            {
+              "text": "Sunglasses",
+              "points": 12,
+              "accept": [
+                "sunglasses",
+                "shades"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name a food people eat for breakfast.",
+          "answers": [
+            {
+              "text": "Eggs",
+              "points": 30,
+              "accept": [
+                "egg",
+                "eggs"
+              ]
+            },
+            {
+              "text": "Cereal",
+              "points": 20,
+              "accept": [
+                "cereal"
+              ]
+            },
+            {
+              "text": "Pancakes",
+              "points": 15,
+              "accept": [
+                "pancake",
+                "pancakes",
+                "waffles"
+              ]
+            },
+            {
+              "text": "Bacon",
+              "points": 14,
+              "accept": [
+                "bacon"
+              ]
+            },
+            {
+              "text": "Toast",
+              "points": 12,
+              "accept": [
+                "toast",
+                "bread"
+              ]
+            },
+            {
+              "text": "Oatmeal",
+              "points": 9,
+              "accept": [
+                "oatmeal",
+                "oats"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name a sport played with a ball.",
+          "answers": [
+            {
+              "text": "Soccer",
+              "points": 28,
+              "accept": [
+                "soccer",
+                "football"
+              ]
+            },
+            {
+              "text": "Basketball",
+              "points": 25,
+              "accept": [
+                "basketball"
+              ]
+            },
+            {
+              "text": "American football",
+              "points": 18,
+              "accept": [
+                "american football",
+                "nfl"
+              ]
+            },
+            {
+              "text": "Baseball",
+              "points": 15,
+              "accept": [
+                "baseball"
+              ]
+            },
+            {
+              "text": "Tennis",
+              "points": 8,
+              "accept": [
+                "tennis"
+              ]
+            },
+            {
+              "text": "Golf",
+              "points": 6,
+              "accept": [
+                "golf"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name a color of the rainbow.",
+          "answers": [
+            {
+              "text": "Red",
+              "points": 25,
+              "accept": [
+                "red"
+              ]
+            },
+            {
+              "text": "Blue",
+              "points": 22,
+              "accept": [
+                "blue"
+              ]
+            },
+            {
+              "text": "Green",
+              "points": 18,
+              "accept": [
+                "green"
+              ]
+            },
+            {
+              "text": "Yellow",
+              "points": 15,
+              "accept": [
+                "yellow"
+              ]
+            },
+            {
+              "text": "Orange",
+              "points": 10,
+              "accept": [
+                "orange"
+              ]
+            },
+            {
+              "text": "Purple",
+              "points": 10,
+              "accept": [
+                "purple",
+                "violet",
+                "indigo"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questions": [
+        {
+          "prompt": "Name something you do at a red light.",
+          "answers": [
+            {
+              "text": "Check phone",
+              "points": 34,
+              "accept": [
+                "phone",
+                "text"
+              ]
+            },
+            {
+              "text": "Wait",
+              "points": 22,
+              "accept": [
+                "sit",
+                "stop"
+              ]
+            },
+            {
+              "text": "Change the radio",
+              "points": 15,
+              "accept": [
+                "radio",
+                "music"
+              ]
+            },
+            {
+              "text": "Look around",
+              "points": 12,
+              "accept": [
+                "people watch"
+              ]
+            },
+            {
+              "text": "Put on makeup",
+              "points": 9,
+              "accept": [
+                "makeup",
+                "mirror"
+              ]
+            },
+            {
+              "text": "Eat",
+              "points": 8,
+              "accept": [
+                "snack"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name a reason a person might cry.",
+          "answers": [
+            {
+              "text": "Sad",
+              "points": 30,
+              "accept": [
+                "sadness",
+                "sad movie"
+              ]
+            },
+            {
+              "text": "Death",
+              "points": 24,
+              "accept": [
+                "funeral",
+                "someone died"
+              ]
+            },
+            {
+              "text": "Happy",
+              "points": 18,
+              "accept": [
+                "joy",
+                "happiness"
+              ]
+            },
+            {
+              "text": "Hurt",
+              "points": 14,
+              "accept": [
+                "pain",
+                "injury"
+              ]
+            },
+            {
+              "text": "Breakup",
+              "points": 9,
+              "accept": [
+                "heartbreak"
+              ]
+            },
+            {
+              "text": "Onions",
+              "points": 5,
+              "accept": [
+                "cutting onions"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name a bird.",
+          "answers": [
+            {
+              "text": "Eagle",
+              "points": 28,
+              "accept": [
+                "bald eagle"
+              ]
+            },
+            {
+              "text": "Robin",
+              "points": 22
+            },
+            {
+              "text": "Blue jay",
+              "points": 16,
+              "accept": [
+                "bluejay"
+              ]
+            },
+            {
+              "text": "Cardinal",
+              "points": 12
+            },
+            {
+              "text": "Parrot",
+              "points": 10
+            },
+            {
+              "text": "Crow",
+              "points": 7,
+              "accept": [
+                "raven"
+              ]
+            },
+            {
+              "text": "Pigeon",
+              "points": 5,
+              "accept": [
+                "dove"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name something that's often stolen.",
+          "answers": [
+            {
+              "text": "Car",
+              "points": 34,
+              "accept": [
+                "cars"
+              ]
+            },
+            {
+              "text": "Purse",
+              "points": 22,
+              "accept": [
+                "wallet",
+                "money"
+              ]
+            },
+            {
+              "text": "Phone",
+              "points": 20,
+              "accept": [
+                "cell phone"
+              ]
+            },
+            {
+              "text": "Bike",
+              "points": 12,
+              "accept": [
+                "bicycle"
+              ]
+            },
+            {
+              "text": "Jewelry",
+              "points": 8
+            },
+            {
+              "text": "Identity",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "prompt": "Name a vegetable kids hate.",
+          "answers": [
+            {
+              "text": "Broccoli",
+              "points": 38
+            },
+            {
+              "text": "Brussels sprouts",
+              "points": 24,
+              "accept": [
+                "brussel sprouts",
+                "sprouts"
+              ]
+            },
+            {
+              "text": "Spinach",
+              "points": 14
+            },
+            {
+              "text": "Peas",
+              "points": 10
+            },
+            {
+              "text": "Carrots",
+              "points": 7,
+              "accept": [
+                "carrot"
+              ]
+            },
+            {
+              "text": "Cauliflower",
+              "points": 4
+            },
+            {
+              "text": "Asparagus",
+              "points": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questions": [
+        {
+          "prompt": "Name something you'd see at a circus.",
+          "answers": [
+            {
+              "text": "Clowns",
+              "points": 38,
+              "accept": [
+                "clown"
+              ]
+            },
+            {
+              "text": "Elephants",
+              "points": 20,
+              "accept": [
+                "elephant"
+              ]
+            },
+            {
+              "text": "Acrobats",
+              "points": 14,
+              "accept": [
+                "trapeze",
+                "tightrope"
+              ]
+            },
+            {
+              "text": "Lions",
+              "points": 11,
+              "accept": [
+                "lion",
+                "tiger"
+              ]
+            },
+            {
+              "text": "Ringmaster",
+              "points": 8
+            },
+            {
+              "text": "Cotton candy",
+              "points": 5,
+              "accept": [
+                "popcorn",
+                "peanuts"
+              ]
+            },
+            {
+              "text": "Juggler",
+              "points": 4,
+              "accept": [
+                "juggling"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name a reason people move.",
+          "answers": [
+            {
+              "text": "New job",
+              "points": 36,
+              "accept": [
+                "job",
+                "work"
+              ]
+            },
+            {
+              "text": "Marriage",
+              "points": 18,
+              "accept": [
+                "married",
+                "spouse"
+              ]
+            },
+            {
+              "text": "Cheaper rent",
+              "points": 14,
+              "accept": [
+                "money",
+                "cost",
+                "rent"
+              ]
+            },
+            {
+              "text": "More space",
+              "points": 12,
+              "accept": [
+                "bigger house",
+                "kids"
+              ]
+            },
+            {
+              "text": "School",
+              "points": 10,
+              "accept": [
+                "college"
+              ]
+            },
+            {
+              "text": "Weather",
+              "points": 6,
+              "accept": [
+                "climate"
+              ]
+            },
+            {
+              "text": "Family",
+              "points": 4,
+              "accept": [
+                "closer to family"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name something you might forget when leaving the house.",
+          "answers": [
+            {
+              "text": "Keys",
+              "points": 35,
+              "accept": [
+                "car keys"
+              ]
+            },
+            {
+              "text": "Phone",
+              "points": 28,
+              "accept": [
+                "cell phone"
+              ]
+            },
+            {
+              "text": "Wallet",
+              "points": 16,
+              "accept": [
+                "purse",
+                "money"
+              ]
+            },
+            {
+              "text": "Glasses",
+              "points": 8,
+              "accept": [
+                "sunglasses"
+              ]
+            },
+            {
+              "text": "Lunch",
+              "points": 6,
+              "accept": [
+                "food"
+              ]
+            },
+            {
+              "text": "Umbrella",
+              "points": 4
+            },
+            {
+              "text": "Turning off the stove",
+              "points": 3,
+              "accept": [
+                "stove",
+                "lights"
+              ]
+            }
+          ]
+        },
+        {
+          "prompt": "Name a winter sport.",
+          "answers": [
+            {
+              "text": "Skiing",
+              "points": 41,
+              "accept": [
+                "ski"
+              ]
+            },
+            {
+              "text": "Hockey",
+              "points": 22,
+              "accept": [
+                "ice hockey"
+              ]
+            },
+            {
+              "text": "Snowboarding",
+              "points": 18,
+              "accept": [
+                "snowboard"
+              ]
+            },
+            {
+              "text": "Ice skating",
+              "points": 11,
+              "accept": [
+                "skating",
+                "figure skating"
+              ]
+            },
+            {
+              "text": "Sledding",
+              "points": 5,
+              "accept": [
+                "sled",
+                "bobsled"
+              ]
+            },
+            {
+              "text": "Curling",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "prompt": "Name something that's sticky.",
+          "answers": [
+            {
+              "text": "Glue",
+              "points": 30
+            },
+            {
+              "text": "Honey",
+              "points": 24
+            },
+            {
+              "text": "Tape",
+              "points": 16
+            },
+            {
+              "text": "Gum",
+              "points": 12,
+              "accept": [
+                "bubble gum"
+              ]
+            },
+            {
+              "text": "Syrup",
+              "points": 9,
+              "accept": [
+                "maple syrup"
+              ]
+            },
+            {
+              "text": "Candy",
+              "points": 5,
+              "accept": [
+                "caramel"
+              ]
+            },
+            {
+              "text": "Peanut butter",
+              "points": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

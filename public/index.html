@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#061a4a" />
+    <title>Family Feud Party</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/feud.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>" />
+  </head>
+  <body>
+    <div class="conn" id="conn"></div>
+    <div class="top-tools">
+      <button class="ghost tool" id="soundBtn" title="Sound effects">🔇 Sound off</button>
+      <button class="ghost tool hidden" id="restartBtn" title="Restart the game">⟲ Restart game</button>
+    </div>
+    <div class="stage" id="stage"></div>
+    <div class="strike-overlay hidden" id="strikeOverlay"></div>
+    <div class="confetti hidden" id="confetti"></div>
+    <!-- qrcode-generator (UMD) exposes global `qrcode` -->
+    <script src="/vendor/qrcode.js"></script>
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>

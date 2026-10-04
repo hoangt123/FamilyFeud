@@ -1,0 +1,1019 @@
+{
+  "id": "food-and-fun",
+  "title": "Food & Fun",
+  "surveys": [
+    {
+      "prompt": "Name a food people put ketchup on.",
+      "answers": [
+        {
+          "text": "French fries",
+          "points": 42,
+          "accept": [
+            "fries",
+            "chips"
+          ]
+        },
+        {
+          "text": "Hamburger",
+          "points": 24,
+          "accept": [
+            "burger",
+            "burgers",
+            "cheeseburger"
+          ]
+        },
+        {
+          "text": "Hot dog",
+          "points": 16,
+          "accept": [
+            "hot dogs",
+            "hotdog"
+          ]
+        },
+        {
+          "text": "Eggs",
+          "points": 7,
+          "accept": [
+            "scrambled eggs",
+            "omelette"
+          ]
+        },
+        {
+          "text": "Meatloaf",
+          "points": 5,
+          "accept": [
+            "meat loaf"
+          ]
+        },
+        {
+          "text": "Hash browns",
+          "points": 4,
+          "accept": [
+            "potatoes",
+            "tater tots"
+          ]
+        },
+        {
+          "text": "Steak",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name a flavor of ice cream.",
+      "answers": [
+        {
+          "text": "Chocolate",
+          "points": 38
+        },
+        {
+          "text": "Vanilla",
+          "points": 31
+        },
+        {
+          "text": "Strawberry",
+          "points": 14
+        },
+        {
+          "text": "Mint chocolate chip",
+          "points": 7,
+          "accept": [
+            "mint",
+            "mint chip"
+          ]
+        },
+        {
+          "text": "Cookies and cream",
+          "points": 5,
+          "accept": [
+            "cookies n cream",
+            "oreo"
+          ]
+        },
+        {
+          "text": "Rocky road",
+          "points": 3
+        },
+        {
+          "text": "Butter pecan",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people order at a coffee shop besides coffee.",
+      "answers": [
+        {
+          "text": "Tea",
+          "points": 30,
+          "accept": [
+            "chai",
+            "green tea"
+          ]
+        },
+        {
+          "text": "Muffin",
+          "points": 20,
+          "accept": [
+            "muffins",
+            "blueberry muffin"
+          ]
+        },
+        {
+          "text": "Hot chocolate",
+          "points": 16,
+          "accept": [
+            "hot cocoa",
+            "cocoa"
+          ]
+        },
+        {
+          "text": "Bagel",
+          "points": 12,
+          "accept": [
+            "bagels"
+          ]
+        },
+        {
+          "text": "Croissant",
+          "points": 9,
+          "accept": [
+            "pastry",
+            "pastries"
+          ]
+        },
+        {
+          "text": "Smoothie",
+          "points": 7,
+          "accept": [
+            "smoothies"
+          ]
+        },
+        {
+          "text": "Cookie",
+          "points": 6,
+          "accept": [
+            "cookies"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a food that's hard to eat neatly.",
+      "answers": [
+        {
+          "text": "Spaghetti",
+          "points": 34,
+          "accept": [
+            "pasta",
+            "noodles"
+          ]
+        },
+        {
+          "text": "Ribs",
+          "points": 22,
+          "accept": [
+            "bbq ribs",
+            "barbecue"
+          ]
+        },
+        {
+          "text": "Tacos",
+          "points": 15,
+          "accept": [
+            "taco"
+          ]
+        },
+        {
+          "text": "Corn on the cob",
+          "points": 10,
+          "accept": [
+            "corn"
+          ]
+        },
+        {
+          "text": "Crab",
+          "points": 8,
+          "accept": [
+            "lobster",
+            "crab legs"
+          ]
+        },
+        {
+          "text": "Burger",
+          "points": 6,
+          "accept": [
+            "hamburger",
+            "sloppy joe"
+          ]
+        },
+        {
+          "text": "Wings",
+          "points": 5,
+          "accept": [
+            "chicken wings",
+            "buffalo wings"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you put on a hamburger.",
+      "answers": [
+        {
+          "text": "Cheese",
+          "points": 30
+        },
+        {
+          "text": "Ketchup",
+          "points": 22
+        },
+        {
+          "text": "Lettuce",
+          "points": 16
+        },
+        {
+          "text": "Tomato",
+          "points": 12,
+          "accept": [
+            "tomatoes"
+          ]
+        },
+        {
+          "text": "Onions",
+          "points": 9,
+          "accept": [
+            "onion"
+          ]
+        },
+        {
+          "text": "Pickles",
+          "points": 7,
+          "accept": [
+            "pickle"
+          ]
+        },
+        {
+          "text": "Mustard",
+          "points": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name a food associated with Thanksgiving.",
+      "answers": [
+        {
+          "text": "Turkey",
+          "points": 52
+        },
+        {
+          "text": "Stuffing",
+          "points": 15,
+          "accept": [
+            "dressing"
+          ]
+        },
+        {
+          "text": "Mashed potatoes",
+          "points": 11,
+          "accept": [
+            "potatoes"
+          ]
+        },
+        {
+          "text": "Pumpkin pie",
+          "points": 10,
+          "accept": [
+            "pie"
+          ]
+        },
+        {
+          "text": "Cranberry sauce",
+          "points": 7,
+          "accept": [
+            "cranberries"
+          ]
+        },
+        {
+          "text": "Sweet potatoes",
+          "points": 3,
+          "accept": [
+            "yams"
+          ]
+        },
+        {
+          "text": "Gravy",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name a snack people eat at the movies.",
+      "answers": [
+        {
+          "text": "Popcorn",
+          "points": 62
+        },
+        {
+          "text": "Candy",
+          "points": 15,
+          "accept": [
+            "m&ms",
+            "skittles",
+            "sour patch",
+            "twizzlers"
+          ]
+        },
+        {
+          "text": "Nachos",
+          "points": 9
+        },
+        {
+          "text": "Soda",
+          "points": 6,
+          "accept": [
+            "drink",
+            "pop",
+            "coke"
+          ]
+        },
+        {
+          "text": "Hot dog",
+          "points": 5,
+          "accept": [
+            "hotdog"
+          ]
+        },
+        {
+          "text": "Pretzel",
+          "points": 3,
+          "accept": [
+            "pretzels"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people grill in the summer.",
+      "answers": [
+        {
+          "text": "Burgers",
+          "points": 36,
+          "accept": [
+            "hamburgers",
+            "hamburger"
+          ]
+        },
+        {
+          "text": "Hot dogs",
+          "points": 24,
+          "accept": [
+            "hot dog",
+            "franks"
+          ]
+        },
+        {
+          "text": "Steak",
+          "points": 15,
+          "accept": [
+            "steaks"
+          ]
+        },
+        {
+          "text": "Chicken",
+          "points": 11
+        },
+        {
+          "text": "Corn",
+          "points": 6,
+          "accept": [
+            "corn on the cob"
+          ]
+        },
+        {
+          "text": "Ribs",
+          "points": 5
+        },
+        {
+          "text": "Vegetables",
+          "points": 3,
+          "accept": [
+            "veggies",
+            "kabobs"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a fruit that's red.",
+      "answers": [
+        {
+          "text": "Apple",
+          "points": 37,
+          "accept": [
+            "apples"
+          ]
+        },
+        {
+          "text": "Strawberry",
+          "points": 30,
+          "accept": [
+            "strawberries"
+          ]
+        },
+        {
+          "text": "Cherry",
+          "points": 18,
+          "accept": [
+            "cherries"
+          ]
+        },
+        {
+          "text": "Watermelon",
+          "points": 6
+        },
+        {
+          "text": "Raspberry",
+          "points": 5,
+          "accept": [
+            "raspberries"
+          ]
+        },
+        {
+          "text": "Pomegranate",
+          "points": 2
+        },
+        {
+          "text": "Cranberry",
+          "points": 2,
+          "accept": [
+            "cranberries"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something that comes in a can.",
+      "answers": [
+        {
+          "text": "Soup",
+          "points": 31
+        },
+        {
+          "text": "Soda",
+          "points": 26,
+          "accept": [
+            "pop",
+            "coke",
+            "beer"
+          ]
+        },
+        {
+          "text": "Tuna",
+          "points": 13,
+          "accept": [
+            "fish"
+          ]
+        },
+        {
+          "text": "Beans",
+          "points": 10
+        },
+        {
+          "text": "Vegetables",
+          "points": 9,
+          "accept": [
+            "corn",
+            "green beans",
+            "peas"
+          ]
+        },
+        {
+          "text": "Fruit",
+          "points": 6,
+          "accept": [
+            "peaches",
+            "pineapple"
+          ]
+        },
+        {
+          "text": "Pet food",
+          "points": 5,
+          "accept": [
+            "cat food",
+            "dog food"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a type of pie.",
+      "answers": [
+        {
+          "text": "Apple",
+          "points": 40
+        },
+        {
+          "text": "Pumpkin",
+          "points": 18
+        },
+        {
+          "text": "Cherry",
+          "points": 14
+        },
+        {
+          "text": "Pecan",
+          "points": 11
+        },
+        {
+          "text": "Blueberry",
+          "points": 7
+        },
+        {
+          "text": "Key lime",
+          "points": 6,
+          "accept": [
+            "lime"
+          ]
+        },
+        {
+          "text": "Lemon meringue",
+          "points": 4,
+          "accept": [
+            "lemon"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a board game.",
+      "answers": [
+        {
+          "text": "Monopoly",
+          "points": 42
+        },
+        {
+          "text": "Scrabble",
+          "points": 17
+        },
+        {
+          "text": "Clue",
+          "points": 12
+        },
+        {
+          "text": "Chess",
+          "points": 10
+        },
+        {
+          "text": "Sorry!",
+          "points": 8,
+          "accept": [
+            "sorry"
+          ]
+        },
+        {
+          "text": "Candy Land",
+          "points": 6,
+          "accept": [
+            "candyland"
+          ]
+        },
+        {
+          "text": "Life",
+          "points": 5,
+          "accept": [
+            "game of life"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something kids beg their parents for.",
+      "answers": [
+        {
+          "text": "Candy",
+          "points": 28,
+          "accept": [
+            "sweets",
+            "treats"
+          ]
+        },
+        {
+          "text": "Toys",
+          "points": 22,
+          "accept": [
+            "toy"
+          ]
+        },
+        {
+          "text": "A phone",
+          "points": 16,
+          "accept": [
+            "phone",
+            "cell phone"
+          ]
+        },
+        {
+          "text": "A pet",
+          "points": 13,
+          "accept": [
+            "dog",
+            "puppy",
+            "pet"
+          ]
+        },
+        {
+          "text": "Video games",
+          "points": 11,
+          "accept": [
+            "games",
+            "xbox",
+            "playstation"
+          ]
+        },
+        {
+          "text": "Money",
+          "points": 6,
+          "accept": [
+            "allowance"
+          ]
+        },
+        {
+          "text": "Staying up late",
+          "points": 4,
+          "accept": [
+            "later bedtime"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people do at the beach.",
+      "answers": [
+        {
+          "text": "Swim",
+          "points": 40,
+          "accept": [
+            "swimming"
+          ]
+        },
+        {
+          "text": "Tan",
+          "points": 23,
+          "accept": [
+            "sunbathe",
+            "lay out",
+            "sunbathing"
+          ]
+        },
+        {
+          "text": "Build sandcastles",
+          "points": 12,
+          "accept": [
+            "sandcastle",
+            "sand castle"
+          ]
+        },
+        {
+          "text": "Surf",
+          "points": 10,
+          "accept": [
+            "surfing"
+          ]
+        },
+        {
+          "text": "Read",
+          "points": 7,
+          "accept": [
+            "reading"
+          ]
+        },
+        {
+          "text": "Play volleyball",
+          "points": 5,
+          "accept": [
+            "volleyball"
+          ]
+        },
+        {
+          "text": "Collect seashells",
+          "points": 3,
+          "accept": [
+            "shells",
+            "seashells"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a cartoon character.",
+      "answers": [
+        {
+          "text": "Mickey Mouse",
+          "points": 33,
+          "accept": [
+            "mickey"
+          ]
+        },
+        {
+          "text": "Bugs Bunny",
+          "points": 22,
+          "accept": [
+            "bugs"
+          ]
+        },
+        {
+          "text": "SpongeBob",
+          "points": 16,
+          "accept": [
+            "spongebob squarepants",
+            "sponge bob"
+          ]
+        },
+        {
+          "text": "Homer Simpson",
+          "points": 11,
+          "accept": [
+            "bart",
+            "the simpsons",
+            "simpsons"
+          ]
+        },
+        {
+          "text": "Scooby-Doo",
+          "points": 8,
+          "accept": [
+            "scooby"
+          ]
+        },
+        {
+          "text": "Snoopy",
+          "points": 6,
+          "accept": [
+            "charlie brown"
+          ]
+        },
+        {
+          "text": "Tom and Jerry",
+          "points": 4,
+          "accept": [
+            "tom",
+            "jerry"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name a musical instrument.",
+      "answers": [
+        {
+          "text": "Piano",
+          "points": 36,
+          "accept": [
+            "keyboard"
+          ]
+        },
+        {
+          "text": "Guitar",
+          "points": 32
+        },
+        {
+          "text": "Drums",
+          "points": 15,
+          "accept": [
+            "drum"
+          ]
+        },
+        {
+          "text": "Violin",
+          "points": 8,
+          "accept": [
+            "fiddle"
+          ]
+        },
+        {
+          "text": "Trumpet",
+          "points": 5
+        },
+        {
+          "text": "Flute",
+          "points": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name a type of dog.",
+      "answers": [
+        {
+          "text": "Labrador",
+          "points": 31,
+          "accept": [
+            "lab",
+            "golden retriever",
+            "retriever"
+          ]
+        },
+        {
+          "text": "German shepherd",
+          "points": 19,
+          "accept": [
+            "shepherd"
+          ]
+        },
+        {
+          "text": "Poodle",
+          "points": 15
+        },
+        {
+          "text": "Chihuahua",
+          "points": 12
+        },
+        {
+          "text": "Bulldog",
+          "points": 9
+        },
+        {
+          "text": "Pit bull",
+          "points": 8,
+          "accept": [
+            "pitbull"
+          ]
+        },
+        {
+          "text": "Beagle",
+          "points": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Name a popular vacation spot.",
+      "answers": [
+        {
+          "text": "Hawaii",
+          "points": 28
+        },
+        {
+          "text": "Florida",
+          "points": 22,
+          "accept": [
+            "disney world",
+            "orlando",
+            "miami"
+          ]
+        },
+        {
+          "text": "Las Vegas",
+          "points": 16,
+          "accept": [
+            "vegas"
+          ]
+        },
+        {
+          "text": "Mexico",
+          "points": 13,
+          "accept": [
+            "cancun"
+          ]
+        },
+        {
+          "text": "Paris",
+          "points": 10,
+          "accept": [
+            "france"
+          ]
+        },
+        {
+          "text": "New York",
+          "points": 7,
+          "accept": [
+            "nyc"
+          ]
+        },
+        {
+          "text": "The Bahamas",
+          "points": 4,
+          "accept": [
+            "bahamas",
+            "caribbean"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people do while stuck in traffic.",
+      "answers": [
+        {
+          "text": "Listen to music",
+          "points": 33,
+          "accept": [
+            "radio",
+            "sing",
+            "singing",
+            "music"
+          ]
+        },
+        {
+          "text": "Check their phone",
+          "points": 21,
+          "accept": [
+            "phone",
+            "text",
+            "texting"
+          ]
+        },
+        {
+          "text": "Honk",
+          "points": 15,
+          "accept": [
+            "honk the horn",
+            "beep"
+          ]
+        },
+        {
+          "text": "Yell",
+          "points": 12,
+          "accept": [
+            "curse",
+            "swear",
+            "road rage"
+          ]
+        },
+        {
+          "text": "Eat",
+          "points": 9,
+          "accept": [
+            "snack"
+          ]
+        },
+        {
+          "text": "Pick their nose",
+          "points": 6
+        },
+        {
+          "text": "Put on makeup",
+          "points": 4,
+          "accept": [
+            "makeup"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt": "Name an animal you'd see at the zoo.",
+      "answers": [
+        {
+          "text": "Lion",
+          "points": 32,
+          "accept": [
+            "lions"
+          ]
+        },
+        {
+          "text": "Elephant",
+          "points": 24,
+          "accept": [
+            "elephants"
+          ]
+        },
+        {
+          "text": "Monkey",
+          "points": 17,
+          "accept": [
+            "monkeys",
+            "ape",
+            "gorilla"
+          ]
+        },
+        {
+          "text": "Giraffe",
+          "points": 13,
+          "accept": [
+            "giraffes"
+          ]
+        },
+        {
+          "text": "Tiger",
+          "points": 8,
+          "accept": [
+            "tigers"
+          ]
+        },
+        {
+          "text": "Zebra",
+          "points": 4,
+          "accept": [
+            "zebras"
+          ]
+        },
+        {
+          "text": "Bear",
+          "points": 2,
+          "accept": [
+            "polar bear",
+            "panda"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "family-feud-party",
+  "version": "1.0.0",
+  "description": "A self-hosted Family Feud party game for two teams: face-offs, strikes, steals, three rounds and a Fast Money finale.",
+  "type": "module",
+  "main": "server.js",
+  "license": "MIT",
+  "keywords": [
+    "family-feud",
+    "fast-money",
+    "party-game",
+    "survey",
+    "websocket",
+    "self-hosted"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test/engine.test.mjs && node test/http.test.mjs",
+    "gen-cert": "node scripts/gen-cert.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "qrcode-generator": "^1.4.4",
+    "ws": "^8.18.0"
+  }
+}

@@ -1,0 +1,196 @@
+/* Family Feud Party — shared design system. Deep studio blue with gold accents. */
+:root {
+  --bg-0: #030c26;
+  --bg-1: #061a4a;
+  --bg-2: #0b2a6e;
+  --glass: rgba(255, 255, 255, 0.06);
+  --glass-strong: rgba(255, 255, 255, 0.12);
+  --border: rgba(255, 255, 255, 0.12);
+  --text: #f2f3ff;
+  --muted: #a9b8e6;
+  --accent: #ff9a1f;
+  --accent-2: #ffc23d;
+  --accent-3: #ffe08a;
+  --cyan: #4fc3ff;
+  --good: #2fe6a8;
+  --bad: #ff5d6c;
+  --gold: #ffd24a;
+  --grad: linear-gradient(120deg, var(--accent), var(--accent-2) 55%, var(--accent-3));
+  --grad-cool: linear-gradient(120deg, var(--cyan), var(--accent));
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  --radius: 18px;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: var(--font);
+  color: var(--text);
+  background:
+    radial-gradient(1200px 800px at 15% -10%, rgba(40, 110, 255, 0.35), transparent 60%),
+    radial-gradient(1000px 700px at 110% 10%, rgba(255, 170, 40, 0.12), transparent 55%),
+    linear-gradient(180deg, var(--bg-1), var(--bg-0));
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.brand {
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 999px;
+  color: var(--text);
+  background: var(--glass-strong);
+  border: 1px solid var(--border);
+  padding: 0.7em 1.3em;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.12s ease, filter 0.18s ease, opacity 0.18s ease, background 0.18s;
+}
+button:active {
+  transform: scale(0.96);
+}
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+button.primary {
+  background: var(--grad);
+  border: none;
+  box-shadow: 0 8px 24px rgba(255, 154, 31, 0.35);
+}
+button.good {
+  background: linear-gradient(120deg, #14b87a, var(--good));
+  border: none;
+}
+button.bad {
+  background: linear-gradient(120deg, #d8324a, var(--bad));
+  border: none;
+}
+button.ghost {
+  background: transparent;
+}
+
+input,
+select {
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.75em 1em;
+  outline: none;
+  transition: border 0.15s, box-shadow 0.15s;
+}
+input:focus,
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 154, 31, 0.3);
+}
+
+.card {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--shadow);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.3em 0.8em;
+  border-radius: 999px;
+  background: var(--glass-strong);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.muted {
+  color: var(--muted);
+}
+.hidden {
+  display: none !important;
+}
+
+/* Connection dot */
+.conn {
+  position: fixed;
+  top: 12px;
+  right: 14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bad);
+  box-shadow: 0 0 12px var(--bad);
+  z-index: 100;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.conn.ok {
+  background: var(--good);
+  box-shadow: 0 0 12px var(--good);
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 194, 61, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px 8px rgba(255, 194, 61, 0.55);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

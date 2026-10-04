@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Environment & secrets — never commit
+.env
+.env.local
+*.env
+
+# TLS certificates / keys — never commit
+certs/
+*.pem
+*.key
+*.crt
+
+# Runtime data (caches, saved game snapshots)
+data/*
+!data/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
