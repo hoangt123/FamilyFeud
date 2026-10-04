@@ -30,24 +30,24 @@ warnings and that pack is skipped, so a typo never stops the server.
 
 ## Fast Money packs
 
-Fast Money uses the same format as [Quiz Clash](https://github.com/hoangt123/Jeopardy):
-`"kind": "fast-money"` and a list of `sets`, each with exactly **5** questions.
-One set is picked at random each game.
+Fast Money questions form one big pool (`"kind": "fast-money"`). Each game draws
+**5** of them, preferring questions not played in earlier games and one per
+`topic`, so a finale never has two food questions when other topics are left.
+Add as many as you like; the more topics, the more varied the finales.
 
 ```jsonc
 {
   "id": "fast-money",
   "kind": "fast-money",
-  "sets": [
+  "questions": [
     {
-      "questions": [
-        {
-          "prompt": "Name a popular pizza topping.",
-          "answers": [{ "text": "Pepperoni", "points": 40, "accept": ["pepperoni"] }]
-        }
-        // …×5
-      ]
+      "prompt": "Name a popular pizza topping.",
+      "topic": "food",
+      "answers": [{ "text": "Pepperoni", "points": 40, "accept": ["pepperoni"] }]
     }
   ]
 }
 ```
+
+Packs in the [Quiz Clash](https://github.com/hoangt123/Jeopardy) `"sets"` format
+still load: their sets are merged into the pool.

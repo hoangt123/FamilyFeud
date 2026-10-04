@@ -1,6 +1,7 @@
 // End-to-end game logic test. Run: node test/engine.test.mjs
 import assert from 'node:assert/strict';
 import { loadPacks } from '../src/content/packLoader.js';
+import { drawFastMoneyQuestions } from '../src/game/fastMoney.js';
 import { GameEngine, matchSurvey } from '../src/game/GameEngine.js';
 import { PHASE, ROLE } from '../src/shared/protocol.js';
 
@@ -21,9 +22,9 @@ const SURVEY = {
   ],
 };
 
-function makeEngine(fastMoneySets) {
-  const packs = { surveyPacks: [{ id: 't', title: 'T', surveys: [{ ...SURVEY, packId: 't' }] }], fastMoneySets };
-  return new GameEngine(packs);
+function makeEngine(fastMoneyQuestions, opts) {
+  const packs = { surveyPacks: [{ id: 't', title: 'T', surveys: [{ ...SURVEY, packId: 't' }] }], fastMoneyQuestions };
+  return new GameEngine(packs, opts);
 }
 
 // Drive the engine as the host would.
@@ -32,11 +33,12 @@ const host = (e, type, data = {}) => e.handle(ROLE.BOARD, { type, ...data });
 async function main() {
   const { surveyPacks, fastMoney, warnings } = await loadPacks();
   assert.equal(warnings.length, 0, `packs should load cleanly:\n${warnings.join('\n')}`);
-  assert.ok(surveyPacks.length >= 2 && fastMoney.length >= 2);
+  assert.ok(surveyPacks.length >= 2 && fastMoney.length >= 40);
+  assert.ok(fastMoney.every((q) => q.topic), 'every Fast Money question has a topic');
   for (const p of surveyPacks)
     for (const s of p.surveys)
       for (let i = 1; i < s.answers.length; i++) assert.ok(s.answers[i - 1].points >= s.answers[i].points);
-  ok(`loaded ${surveyPacks.length} survey packs and ${fastMoney.length} Fast Money sets, sorted by points`);
+  ok(`loaded ${surveyPacks.length} survey packs and ${fastMoney.length} Fast Money questions, sorted by points`);
 
   // Matching: aliases, typos, whole-word containment only.
   assert.equal(matchSurvey(SURVEY.answers, 'sandwich'), 0);
@@ -47,8 +49,36 @@ async function main() {
   assert.equal(matchSurvey([{ text: 'Read', accept: [] }], 'bread'), -1);
   ok('responses match by alias, small typo and whole word; "bread" is not "read"');
 
-  // Fast Money sets: one fixed set so the test can type real answers.
-  const fmSets = [fastMoney[0]];
+  // Fast Money draws five questions from the whole pool, one per topic.
+  {
+    for (let i = 0; i < 50; i++) {
+      const picks = drawFastMoneyQuestions(fastMoney, new Set());
+      assert.equal(picks.length, 5);
+      assert.equal(new Set(picks.map((q) => q.topic)).size, 5, 'five different topics');
+    }
+    const firstFew = new Set(fastMoney.slice(0, 45).map((q) => q.prompt));
+    const picks = drawFastMoneyQuestions(fastMoney, firstFew);
+    assert.ok(picks.every((q) => !firstFew.has(q.prompt)), 'unplayed questions come first');
+    ok('Fast Money draws 5 questions on 5 different topics, unplayed ones first');
+
+    // Across games, nothing repeats until the pool is used up, then it cycles.
+    let saved = [];
+    const store = { load: () => saved, save: (keys) => (saved = keys) };
+    const seen = new Set();
+    const games = Math.floor(fastMoney.length / 5);
+    for (let g = 0; g < games; g++) {
+      const t = makeEngine(fastMoney, { usedFastMoneyStore: store });
+      for (const q of t.drawFastMoney()) {
+        assert.ok(!seen.has(q.prompt), `repeated "${q.prompt}" in game ${g + 1}`);
+        seen.add(q.prompt);
+      }
+    }
+    assert.equal(seen.size, games * 5);
+    assert.equal(makeEngine(fastMoney, { usedFastMoneyStore: store }).drawFastMoney().length, 5);
+    ok(`${games} games in a row get all-new Fast Money questions, then the pool cycles`);
+  }
+
+  const fmSets = fastMoney;
   const e = makeEngine(fmSets);
   host(e, 'config', { teamNames: ['Smiths', 'Joneses'], teamMembers: ['Ann, Bob, Cal', ''] });
   host(e, 'start_game');
@@ -204,7 +234,7 @@ async function main() {
     host(t, 'next_round');
     assert.equal(t.state.phase, PHASE.GAME_OVER);
     assert.equal(t.state.winner, 0);
-    ok('restart keeps team names; without Fast Money sets the leader is crowned after round 3');
+    ok('restart keeps team names; without Fast Money questions the leader is crowned after round 3');
   }
 
   console.log(`\nengine: all ${passed} checks passed`);

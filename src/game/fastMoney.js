@@ -3,15 +3,51 @@
 import { bestMatch } from '../content/match.js';
 import { FAST_MONEY } from '../shared/protocol.js';
 
-// Build the initial Fast Money state from a randomly chosen survey set.
+// Pick this game's questions from the pool: unplayed ones first, and one per
+// topic where possible so the five feel different from each other. `used` is
+// the set of prompts already played in earlier games.
+export function drawFastMoneyQuestions(pool, used, count = FAST_MONEY.QUESTION_COUNT) {
+  const shuffled = shuffle(pool);
+  const fresh = shuffled.filter((q) => !used.has(q.prompt));
+  const stale = shuffled.filter((q) => used.has(q.prompt));
+  const picks = [];
+  const topics = new Set();
+  // Pass 1: fresh questions with a new topic. Pass 2: any fresh question.
+  // Pass 3: replayed questions, again preferring new topics.
+  const passes = [
+    [fresh, true],
+    [fresh, false],
+    [stale, true],
+    [stale, false],
+  ];
+  for (const [list, distinct] of passes) {
+    for (const q of list) {
+      if (picks.length >= count) return picks;
+      if (picks.includes(q) || (distinct && q.topic && topics.has(q.topic))) continue;
+      picks.push(q);
+      if (q.topic) topics.add(q.topic);
+    }
+  }
+  return picks;
+}
+
+function shuffle(list) {
+  const a = [...list];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Build the initial Fast Money state from the drawn questions.
 // Finalists answer out loud one after the other; the host types each answer.
-export function createFastMoney(sets, finalists) {
-  const set = sets[Math.floor(Math.random() * sets.length)];
+export function createFastMoney(questions, finalists) {
   return {
-    questions: set.questions.map((q) => ({ prompt: q.prompt, answers: q.answers })),
+    questions: questions.map((q) => ({ prompt: q.prompt, answers: q.answers })),
     finalists: finalists.map((p) => ({ id: p.id, name: p.name })),
     // answers[slot][questionIndex] = { text, points, revealed, matchedAnswer }
-    answers: finalists.map(() => emptyAnswers(set.questions.length)),
+    answers: finalists.map(() => emptyAnswers(questions.length)),
     stage: 'answer', // 'answer' (finalists take turns) | 'reveal' (host revealing)
     activeSlot: 0, // whose turn it is during 'answer'
     // The active finalist's clock, started by the host: { slot, seconds, startedAt, endsAt, expired }

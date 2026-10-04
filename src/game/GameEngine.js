@@ -7,9 +7,10 @@
 // or they collect three strikes, at which point the other team gets one answer
 // to steal the bank. The leading team plays Fast Money as the final round.
 import { bestMatch } from '../content/match.js';
-import { C2S, PHASE, ROLE, ROUNDS, STRIKES, SURVEY, TEAMS } from '../shared/protocol.js';
+import { C2S, FAST_MONEY, PHASE, ROLE, ROUNDS, STRIKES, SURVEY, TEAMS } from '../shared/protocol.js';
 import {
   createFastMoney,
+  drawFastMoneyQuestions,
   isDuplicateAnswer,
   recomputeTotal,
   scoreAnswer,
@@ -32,10 +33,11 @@ export function matchSurvey(answers, text) {
 }
 
 export class GameEngine {
-  constructor(content, { notify, usedStore } = {}) {
-    this.content = content; // { surveyPacks, fastMoneySets }
+  constructor(content, { notify, usedStore, usedFastMoneyStore } = {}) {
+    this.content = content; // { surveyPacks, fastMoneyQuestions }
     this.notify = notify || (() => {});
     this.usedStore = usedStore || null; // persists played surveys across games
+    this.usedFastMoneyStore = usedFastMoneyStore || null; // ...and played Fast Money questions
     this.timer = null;
     this.eventSeq = 0; // monotonic, so screens never replay an old reveal or strike
     this.fmRejSeq = 0;
@@ -440,7 +442,7 @@ export class GameEngine {
     if (s.phase !== PHASE.ROUND_END) return null;
     if (s.round < ROUNDS.COUNT) return 'round';
     if (s.teams[0].score === s.teams[1].score) return 'sudden_death';
-    return this.content.fastMoneySets.length ? 'fast_money' : 'finish';
+    return this.content.fastMoneyQuestions.length >= FAST_MONEY.QUESTION_COUNT ? 'fast_money' : 'finish';
   }
 
   leader() {
@@ -466,10 +468,23 @@ export class GameEngine {
     }));
     this.history = [];
     s.fmTeam = team;
-    s.fastMoney = createFastMoney(this.content.fastMoneySets, finalists);
+    s.fastMoney = createFastMoney(this.drawFastMoney(), finalists);
     s.survey = null;
     s.phase = PHASE.FAST_MONEY;
     this.emit('fast_money');
+  }
+
+  // Five questions from the whole pool, fresh and on different topics where
+  // possible. Once fewer than five unplayed questions remain, the cycle restarts.
+  drawFastMoney() {
+    const pool = this.content.fastMoneyQuestions;
+    let used = new Set(this.usedFastMoneyStore?.load() ?? []);
+    const unplayed = pool.filter((q) => !used.has(q.prompt)).length;
+    if (unplayed < FAST_MONEY.QUESTION_COUNT) used = new Set();
+    const picks = drawFastMoneyQuestions(pool, used);
+    for (const q of picks) used.add(q.prompt);
+    this.usedFastMoneyStore?.save([...used]);
+    return picks;
   }
 
   // The first two names listed for the team in the lobby, else placeholders.
